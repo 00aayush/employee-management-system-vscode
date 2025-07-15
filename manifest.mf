@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: com.employees.MainApp
+X-COMMENT: Employee Management System - VS Code Compatible
+
