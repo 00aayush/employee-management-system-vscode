@@ -1,0 +1,52 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "compile java",
+      "type": "shell",
+      "command": "javac",
+      "args": [
+        "-d", "bin",
+        "-cp", "lib/*:.",
+        "src/**/*.java"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": "$javac",
+      "windows": {
+        "args": [
+          "-d", "bin",
+          "-cp", "lib/*;.",
+          "src/**/*.java"
+        ]
+      }
+    },
+    {
+      "label": "run java",
+      "type": "shell",
+      "command": "java",
+      "args": [
+        "-cp", "bin:lib/*",
+        "com.employees.MainApp"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "dependsOn": "compile java",
+      "windows": {
+        "args": [
+          "-cp", "bin;lib/*",
+          "com.employees.MainApp"
+        ]
+      }
+    }
+  ]
+}
