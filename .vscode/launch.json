@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch Employee Management System",
+      "request": "launch",
+      "mainClass": "com.employees.MainApp",
+      "projectName": "EmployeeManagementSystem",
+      "cwd": "${workspaceFolder}",
+      "vmArgs": ""
+    }
+  ]
+}
